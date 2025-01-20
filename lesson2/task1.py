@@ -10,3 +10,23 @@
 6. Перевірте, чи є користувач повнолітнім
 """
 
+print("Hello user!")
+name = input("Будь-ласка введіть ім'я:")
+age = int(input("Будь-ласка введіть ваш вік:"))
+height = int(input("Будь-ласка введіть ваш зріст:"))
+print(type(name), type(age), type(height)  )
+print(f"Привіт, {name}! Давайте дізнаємось кілька цікавих фактів про вас.")
+
+relative_height = height / age
+print(f"Якщо б ви росли рівномірно, то в один рік ваш зріст складав би приблизно {relative_height} см!")
+
+age_in_days = age * 365
+print(f"Орієнтовний вік у днях: {age_in_days}")
+
+height_in_meters = int(height / 100)
+print(f"Ваш зріст у метрах: {height_in_meters}")
+
+if age >= 18:
+    print("Ви повнолітній")
+else:
+    print("Ви не повнолітній")
