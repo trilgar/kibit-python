@@ -16,3 +16,40 @@
         різностороннім (усі сторони різні).
     Якщо трикутник утворити неможливо, вивести повідомлення: "Це не трикутник."
 """
+
+
+a = eval(input("Сторона a: "))
+b = eval(input("Сторона b: "))
+c = eval(input("Сторона c: "))
+
+if a + b > c and a + c > b and b + c > a:
+    print("Трикутник можна утворити")
+    if a == c == b:
+        print("Трикутник рівносторонній")
+    elif a == b or b == c or c == a:
+        print("Трикутник рівнобедренний")
+    else:
+        print("Трикутник різносторонній")
+else:
+    print("Трикутник неможливо утворити")
+
+
+
+
+
+"""
+from math import sqrt
+
+number = eval(input("Ведіть число: "))
+
+if not isinstance(number, int) or number < 0:
+    print("Від'ємні числа не підтримуються")
+elif number % 2 == 0:
+    sq_root = sqrt(number)
+    print(f"Квадратний корінь числа = {sq_root}")
+else:
+    print(f"Число в кубі = {number ** 3}")
+"""
+
+
+
