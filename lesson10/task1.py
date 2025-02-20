@@ -19,3 +19,16 @@
 До побачення, Олексій!
 
 """
+
+def greet(name):
+    print(f"Доброго дня {name}!")
+
+
+def farewell(name):
+    print(f"Допобачення, {name}!")
+
+
+name = input("Введіть будь-ласка своє ім'я: ")
+
+greet(name)
+farewell(name)
