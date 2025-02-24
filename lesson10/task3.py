@@ -17,3 +17,12 @@
 
 (Оскільки 1 + 2 + 3 + 4 + 5 = 15)
 """
+
+
+number = int(input("ведить ціле число: "))
+def sum_numbers(n):
+    if n == 1:
+        return 1
+    else: return n + sum_numbers(n-1)
+
+print(sum_numbers(number))
