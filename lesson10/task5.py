@@ -14,9 +14,25 @@
         n помножене на 2 (через double(n))
         n помножене на 3 (через triple(n))
 
+make_multiplier(factor):
+    multiplier(x)
+    return x * factor
+    return lambda x: x * factor
+
 Приклад роботи програми:
 
 Введіть число: 5
 Подвоєне значення: 10
 Потроєне значення: 15
 """
+def make_multiplier(factor):
+    def multiplier(y):
+        return y * factor
+    return multiplier
+
+y = 5
+double = make_multiplier(2)
+triple = make_multiplier(3)
+
+print("Подвоєне", double(y))
+print("Потроєне", triple(y))
