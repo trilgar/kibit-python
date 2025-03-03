@@ -13,4 +13,33 @@
     Третій елемент: 3
     Після зміни п’ятого елемента: [1, 2, 3, 4, 99, 6, 7, 8, 9, 10]
     Довжина списку: 10
+
+strings = ["Hello", "World", "Maxim", 1, 10.4, True]
+5th_element = strings[4]
+print(strings[4])
+strings[4] = -500
+range(start, stop, step)
+strings[]
+
+strings.append("Hello")
+strings.remove("Maxim")
 """
+
+
+
+num_list = list(range(1, 11, 1))
+print(num_list)
+
+third_element = num_list[2]
+print(third_element)
+
+num_list[4] = 99
+print(num_list)
+
+print(len(num_list))
+
+num_list.append(15)
+print(num_list)
+
+num_list.remove(99)
+print(num_list)
