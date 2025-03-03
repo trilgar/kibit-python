@@ -22,3 +22,13 @@ numbers[1:4:3]
 numbers[-5:]
 numbers[10:5] = []
 """
+
+numbers = list(range(5, 51, 5))
+print(numbers)
+
+
+print(numbers[1:9])
+print(numbers[1:-1])
+print(numbers[:: 2])
+print(numbers[-3:])
+print(numbers[4:3])
