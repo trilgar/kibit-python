@@ -36,4 +36,32 @@
 - shallow_copied є поверхневою копією, але вкладені списки залишаються спільними.
 - deep_copied є глибокою копією, тому внутрішній список було продубльовано, і зміни не відобразились.
 
+list(nums)
+nums[:]
+nums.copy()
+
+nums[1] = -1200
+third_element = nums[3][1][1]  : [1,2,3, [3, [3,4] ]]
+third_element[2]
+
 """
+import copy
+
+
+original = [1, 2, [3, 4, 1, 4],[4, 0, 2], 5]
+print("Original before editing:")
+print(original)
+print()
+
+original[2][2] = -400
+
+assigned = original
+shalow_copied = original.copy()
+deep_copy = copy.deepcopy(original)
+
+original[0] = 300
+
+print(original)
+print(assigned)
+print(shalow_copied)
+print(deep_copy)
