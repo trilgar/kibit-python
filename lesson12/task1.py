@@ -10,4 +10,25 @@
    - Виводить кількість входжень числа 10 (за допомогою методу *count()*).
    - Якщо число 20 міститься в кортежі, виводить його індекс (за допомогою методу *index()*).
 3. Перевірте роботу обох функцій, використовуючи список [10, 20, 10, 30, 40].
+
+len()
+tlp[2]
+tpl.count(999)
 """
+def create_tuple(lst):
+    print(lst)
+    t =tuple(lst)
+    return t
+
+lst = [10, 500, 125, 20]
+tpl = create_tuple(lst)
+print(tpl)
+
+def analyze_tuple(tuple_wl):
+    print(f"Довжина кортежу: {len(tuple_wl)}")
+    print(tuple_wl[0])
+    print(tuple_wl[-1])
+    print(tuple_wl.count(10))
+    print(tuple_wl.index(20))
+
+analyze_tuple(tpl)
