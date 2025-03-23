@@ -14,4 +14,29 @@
    - Множину після додавання елементів.
    - Множину після видалення елемента.
    - Створений frozenset
+
+   nums = set()
+   nums = frozenset()
+   nums.add(1)
+   nums.remove(4)
+   nums = {i**2 for i in range(1, 11)}
 """
+
+set1 = set()
+set1.add(1)
+set1.add(2)
+set1.add("Hello world")
+print(set1)
+
+set1.remove(1)
+print(set1)
+
+set1.discard(5)
+print(set1)
+
+
+fs = frozenset(set1)
+print(fs)
+
+fs.discard(3)
+print(fs)
