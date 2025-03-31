@@ -20,3 +20,18 @@
 
     print(pet_dictionary["Mike"])
 """
+
+first_name = input("ведіть імья першого друга: ")
+first_pet = input("ведить назву першої тваринки: ")
+
+second_name = input("ведіть імья другого друга: ")
+second_pet = input("ведить назву другой тваринки: ")
+
+third_name = input("ведіть імья третього друга: ")
+third_pet = input("ведить назву третьої тваринки: ")
+
+pet_dictionary = {first_name: first_pet, second_name: second_pet, third_name: third_name}
+print(pet_dictionary)
+
+print(pet_dictionary["Hans"])
+
