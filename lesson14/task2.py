@@ -16,3 +16,21 @@ grades = {
     "Історія": 80
 }
 """
+
+grades = {
+    "Математика": 90,
+    "Фізика": 85,
+    "Інформатика": 95,
+    "Історія": 80
+}
+
+print(grades)
+
+s = 0
+for value in grades.values():
+    s += value
+
+print(f"Grades' values: {list(grades.values())}")
+print(f"Average mark is {s / len(grades)}")
+
+print(f"Average mark is {sum(grades.values()) / len(grades)}")

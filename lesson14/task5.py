@@ -9,3 +9,15 @@
     Використовуючи метод словника items(), вивести кожну пару у форматі: Книга: <назва>, Автор: <ім'я>
 
 """
+
+books = {
+    "book1": "author 1",
+    "book2": "author 2",
+    "book3": "author 3",
+    "book4": "author 4",
+    "book5": "author 5"
+}
+
+
+for book_name, author_name in books.items():
+    print(f"Book: {book_name}, Author: {author_name}")
