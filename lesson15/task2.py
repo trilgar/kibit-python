@@ -19,3 +19,12 @@
 
 Підказка: Використовуйте методи strip(), split(), isalpha(), isdigit().
 """
+
+text = input("Write a text")
+text = text.strip()
+split_text = text.split()
+print(split_text)
+for i in split_text:
+    if i.isalpha():
+        print(i + " is alpha")
+print(text.count("d"))

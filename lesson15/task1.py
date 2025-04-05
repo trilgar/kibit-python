@@ -16,4 +16,14 @@
     Вивести відповідне повідомлення про наявність або відсутність слова.
 
 Підказка: Використовуйте методи upper(), lower(), title(), len(), find() або оператор in.
+
+1 in text
 """
+text =  input("Write a text:")
+print(text.upper())
+print(text.lower())
+print(text.title())
+print(text.swapcase())
+print(len(text))
+print(text.find("a"))
+print("a" in text)
