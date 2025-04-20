@@ -22,4 +22,31 @@
     Вивести девіз через Анну та Івана ще раз.
 
     Видалити ivan.motto і знову вивести обидва девізи.
+
+    class NameOfCLass:
+        name  =
+
+        def __init__():
+            self.name = "
+
+    obj = NameOfClass("Kittens are cool")
+    obj = NameOfClass()
+
 """
+class ClubMember:
+    motto = "Знання — сила!"
+
+    def sharemotto(self):
+        print(self.motto)
+
+obj = ClubMember()
+obj.motto = "мова сила"
+obj2 = ClubMember()
+
+obj.sharemotto()
+obj2.sharemotto()
+
+
+ClubMember.motto = "Kittens are cool"
+obj.sharemotto()
+obj2.sharemotto()
