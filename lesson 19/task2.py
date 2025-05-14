@@ -10,6 +10,35 @@
 
     Транспонуй отриману матрицю
 
-
+np.arange()
+np.array(range(0 , 11))
 Підказка: використай reshape, ravel і transpose.
+
+cat.name = "Felix"
 """
+
+import numpy as np
+
+npa = np.arange(12)
+print(npa)
+
+npa = npa.reshape(3, 4)
+print(npa)
+
+npa = npa.ravel()
+print(npa)
+
+mpa = npa.reshape(4,3)
+print(mpa)
+print(mpa.shape)
+
+print()
+print()
+npa.shape = (4,3)
+print(npa)
+print()
+
+transposed = npa.transpose()
+print(transposed)
+
+
