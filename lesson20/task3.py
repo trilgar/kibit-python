@@ -17,3 +17,12 @@
 Крок 4: Знайдіть непотрібну колонку та видаліть її
 Крок 5: Збережіть результат в новому Excel-файлі (pd.DataFrame.to_excel)
 """
+
+import pandas as pd
+
+orders_df = pd.read_excel('orders.xlsx', index_col=0)
+print(orders_df)
+
+orders_df.DeliveryCity.fillna('Unknown')
+
+

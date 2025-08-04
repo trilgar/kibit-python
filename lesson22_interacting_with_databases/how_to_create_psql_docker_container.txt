@@ -1,0 +1,21 @@
+docker pull postgres
+
+docker run --name postgresql \
+  -e POSTGRES_USER=user \
+  -e POSTGRES_PASSWORD=pass \
+  -p 5432:5432 \
+  -v /data:/var/lib/postgresql/data \
+  -d postgres
+
+
+
+  Також можна встановити UI для перегляду та взаємодії з базою
+
+
+  docker pull dpage/pgadmin4:latest
+  docker run --name "pgadmin4" -p 8082:80 \
+  -e "PGADMIN_DEFAULT_EMAIL=user@domain.com" \
+  -e "PGADMIN_DEFAULT_PASSWORD=SuperSecret" \
+  -d dpage/pgadmin4
+
+  Веб-інтерфейс доступний на https://localhost:8082
